@@ -31,7 +31,6 @@ pip install -r requirements.txt
 pip install PyQt6 opencv-python ultralytics deepface
 ```
 ___
+
 При первом запуске файла main.py DeepFace загрузит веса модели.
-=======
-# analyzer-emotions
->>>>>>> 30eb8a05f3db09d96f02a54598c46fcb715c296c
+
