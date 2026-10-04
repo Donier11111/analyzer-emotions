@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Анализатор эмоций на python
 
 Десктоп программа заточенная на анализ эмоций с помощью модели DeepFace.Опирающейся на базовые 7 эмоций по системе американского психолога Пола Экмана.
@@ -32,6 +32,6 @@ pip install PyQt6 opencv-python ultralytics deepface
 ```
 ___
 При первом запуске файла main.py DeepFace загрузит веса модели.
-=======
-# analyzer-emotions
->>>>>>> 30eb8a05f3db09d96f02a54598c46fcb715c296c
+___
+Окно программы:
+<img width="1917" height="1077" alt="image" src="https://github.com/user-attachments/assets/991a27d9-0ecb-462e-9c91-e893ff20584f" />
