@@ -2,3 +2,4 @@ PyQt6
 opencv-python
 ultralytics
 deepface
+cv2-enumerate-cameras
