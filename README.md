@@ -5,33 +5,26 @@
 
 ___
 
-## Установка зависимостей
-Версия python3.12+
+## Требования
+- Python 3.12–3.13, Linux (камеры открываются через V4L2)
+- Файл весов `yolov8n-face-lindevs.pt` (https://github.com/lindevs/yolov8-face) положить рядом с `main.py`
 
-
-
-### Отдельная установка pytorch
-Установка с поддержкой видеокарты(GPU) 
-
+## Установка
+PyTorch для процессора (без видеокарты):
 ```bash
-pip install pytorch
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
-Облегченная установка без GPU для процессора
-
+или с поддержкой GPU:
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install torch torchvision
 ```
-### Установка остальных зависимостей
-Из файла зависимостей 
+Остальные зависимости:
 ```bash
 pip install -r requirements.txt
 ```
-Напрямую
+или напрямую:
 ```bash
-pip install PyQt6 opencv-python ultralytics deepface
+pip install PyQt6 opencv-python ultralytics deepface cv2-enumerate-cameras
 ```
-___
-При первом запуске файла main.py DeepFace загрузит веса модели.
-___
-Окно программы:
-<img width="1917" height="1077" alt="image" src="https://github.com/user-attachments/assets/991a27d9-0ecb-462e-9c91-e893ff20584f" />
+Вместе с DeepFace автоматически установится TensorFlow (это большой пакет).
+При первом запуске DeepFace сам скачает веса модели эмоций.
